@@ -35,7 +35,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         [
             InlineKeyboardButton(
                 "💬 Telegram",
-                url="https://t.me/ForeverNIK2",
+                url="https://t.me/forevernik24",
             )
         ],
     ]
