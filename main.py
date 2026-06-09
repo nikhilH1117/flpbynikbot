@@ -6,7 +6,7 @@ from telegram.ext import (
     ContextTypes,
 )
 
-BOT_TOKEN = os.environ.get("BOT_TOKEN")
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -53,15 +53,20 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 
 def main():
+    if not BOT_TOKEN:
+        raise ValueError("BOT_TOKEN environment variable not found!")
+
     app = Application.builder().token(BOT_TOKEN).build()
 
     app.add_handler(CommandHandler("start", start))
 
-    print("Bot is running...")
+    print("Bot Started Successfully...")
 
-    app.run_polling(
-        allowed_updates=Update.ALL_TYPES,
-        close_loop=False,
+    app.run_polling()
+
+
+if __name__ == "__main__":
+    main()        close_loop=False,
     )
 
 
