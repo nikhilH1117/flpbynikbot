@@ -11,7 +11,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         [
             InlineKeyboardButton(
                 "🛍️ Products order",
-                url="https://wa.me/917984200815"
+                url="https://wa.me/qr/GFHM4PQ6ZAL5F1"
             )
         ],
         [
