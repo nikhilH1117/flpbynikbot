@@ -2,7 +2,7 @@ import os
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, ContextTypes
 
-# BOT TOKEN GitHub Secret se aayega
+# BOT TOKEN environment variable se
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 
@@ -10,32 +10,32 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     keyboard = [
         [
             InlineKeyboardButton(
-    "🛍️ View Products",
-    url="https://wa.me/917984200815",
-)
+                "🛍️ Products order",
+                url="https://wa.me/917984200815"
+            )
         ],
         [
             InlineKeyboardButton(
                 "💼 Join Business",
-                url="https://forms.gle/X75rdngzoQDnmUeq5",
+                url="https://forms.gle/X75rdngzoQDnmUeq5"
             )
         ],
         [
             InlineKeyboardButton(
                 "📞 WhatsApp",
-                url="https://wa.me/917984200815",
+                url="https://wa.me/917984200815"
             )
         ],
         [
             InlineKeyboardButton(
                 "📸 Instagram",
-                url="https://instagram.com/foreverby_nik",
+                url="https://instagram.com/foreverby_nik"
             )
         ],
         [
             InlineKeyboardButton(
                 "💬 Telegram",
-                url="https://t.me/forevernik24",
+                url="https://t.me/forevernik24"
             )
         ],
     ]
