@@ -10,9 +10,9 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     keyboard = [
         [
             InlineKeyboardButton(
-                "🛍️ View Products",
-                url="https://foreverliving.com",
-            )
+    "🛍️ View Products",
+    url="https://wa.me/917984200815",
+)
         ],
         [
             InlineKeyboardButton(
